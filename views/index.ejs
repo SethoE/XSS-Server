@@ -1,0 +1,14 @@
+<%- include ("_header.ejs"); %>
+    <h1 style="text-align: center;">Welcome to Cross-Site-Scripting</h1>
+    <div style="margin: auto; width: 50%; padding: 80px; border-top: 15px solid #148cac; border-bottom: 15px solid #148cac;">
+    <form id="contact-form" action="/send" method="POST">
+        <div style="text-align: center;" class="input-group">
+           <input type="text" class="form-control" name="userInput" placeholder="Enter something..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+           <div class="input-group-append">
+                <button class="btn btn-outline-secondary" id="searchBTN" type="submit"><i class="fas fa-cart-plus mr-2"></i>Send</button>
+         </div>
+      </div>
+     </form>
+     <h1 style="text-align: center;"> userInput </h1>
+    </div>
+<%- include ("_footer.ejs"); %>
