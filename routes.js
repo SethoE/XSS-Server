@@ -10,7 +10,11 @@ router.get('/', function(req, res, next) {
   router.get('/about', function(req, res, next) {
     res.render('about', {page:'About Us', menuId:'about'});
   });
-  
+router.post('/send', function(req,  res, next) {
+  res.status(200);
+  res.render('index_send', {myUserInput: req.body.userInput});
+  console.log(req.body);
+});
 
 
 module.exports = router; // export variables

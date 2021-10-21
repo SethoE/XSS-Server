@@ -2,9 +2,8 @@
     <h1 style="text-align: center; padding-top: 100px;">Welcome to Cross-Site-Scripting</h1>
     <div class="formContainer" style="margin: auto; width: 100%; padding: 100px; text-align: center; border-top: 15px solid #148cac; border-bottom: 15px solid #148cac;">
     <form style="flex-direction: column; justify-content: center;" id="contact-form" action="/send" method="POST">
-           <input style="width: 100%;" type="text" class="form-control" name="userInput" placeholder="Enter something...">
-           <div><button style="width: 200px;" class="btn btn-outline-secondary" id="searchBTN" type="submit"><i></i>Send</button></div>
+           <input name="userInput" type="text" class="form-control" placeholder="Enter something..." style="width: 100%;">
+           <div><button id="searchBTN" class="btn btn-outline-secondary" type="submit" style="width: 200px;"><i></i>Send</button></div>
      </form>
-     <h1> user Input </h1>
     </div>
 <%- include ("_footer.ejs"); %>
